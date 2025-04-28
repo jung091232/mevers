@@ -261,41 +261,39 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   display: block;
 }
 
-.features-section {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 10px !important;
-  padding: 30px 10px !important;
-  background: none !important;
+.clean-features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 10px;
+  background: transparent;
 }
 
-.features-section .feature-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex: 1 !important;
-  padding: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  text-align: center !important;
+.clean-feature-card {
+  flex: 1;
+  text-align: center;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.features-section .feature-card img {
-  margin-bottom: 3px !important;
-  max-width: 280px !important;
-  height: auto !important;
+.clean-feature-card img {
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 3px;
 }
 
-.features-section .feature-card h3 {
-  font-size: 24px !important;
-  margin: 2px 0 !important;
-  color: #fff !important;
+.clean-feature-card h3 {
+  font-size: 24px;
+  color: #fff;
+  margin: 5px 0;
 }
 
-.features-section .feature-card p {
-  font-size: 18px !important;
-  line-height: 1.2 !important;
-  color: #fff !important;
+.clean-feature-card p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
 }
