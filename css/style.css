@@ -264,8 +264,8 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .features-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: flex-end;
+  gap: 40px;
   padding: 60px 20px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -284,7 +284,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   width: 100%;
   height: auto;
   max-width: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .feature-card h3 {
