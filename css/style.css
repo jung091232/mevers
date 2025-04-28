@@ -1,28 +1,73 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body, html { width: 100%; height: 100%; background: #000; }
+body, html { width: 100%; height: 100%; background: #000; color: #fff; font-family: Arial, sans-serif; }
 
 #particles-js {
-  width: 100%; height: 100%; position: fixed; top: 0; left: 0;
-  z-index: 0 !important; /* 배경을 헤더 뒤에 배치하도록 설정 */
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0 !important;
 }
 
 header {
   position: fixed; top: 0; left: 0; width: 100%;
-  z-index: 1 !important; /* 헤더를 배경 위에 배치하도록 설정 */
-  background-color: rgba(0,0,0,0.7); padding: 20px;
+  z-index: 1 !important; background-color: rgba(0,0,0,0.7); padding: 20px;
 }
 
 .nav-bar ul {
-  display: flex; justify-content: center; list-style: none;
-  gap: 35px;
+  display: flex; justify-content: center; list-style: none; gap: 35px;
 }
 
 .nav-bar ul li a {
-  color: #00ffc3; text-decoration: none;
-  font-weight: bold; font-size: 20px;
+  color: #00ffc3; text-decoration: none; font-weight: bold; font-size: 20px;
 }
 
 .nav-bar ul li a:hover {
   color: #fff700;
+}
+
+.hero-section {
+  display: flex; justify-content: space-between; align-items: center; height: 100vh;
+  padding: 120px 50px; position: relative; z-index: 1;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px; margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px; margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex; gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 18px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #6a44ff; color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent; color: #fff; border: 2px solid #fff;
+}
+
+.hero-image {
+  position: relative; text-align: center;
+}
+
+.hero-image img {
+  max-width: 350px; height: auto;
+}
+
+.speech-bubble {
+  position: absolute; left: -20px; top: 20%;
+  background-color: rgba(255,255,255,0.1); padding: 12px 16px;
+  border-radius: 12px; font-size: 16px; color: #fff; max-width: 200px;
 }
