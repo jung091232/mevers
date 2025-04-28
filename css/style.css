@@ -187,3 +187,17 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   border-style: solid;
   border-color: transparent #ffffff transparent transparent;
 }
+
+.hero-image {
+  position: relative;
+  text-align: center;
+  overflow: visible; /* 이미지 크기 제한 명확히 제거 */
+  width: auto;
+  height: auto;
+}
+
+.hero-image img {
+  width: auto;
+  height: 1000px; /* 캐릭터 사이즈 극대화 */
+  max-width: none !important; /* 이미지 최대 너비 제한 제거 */
+}
