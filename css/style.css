@@ -227,3 +227,36 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .speech-bubble span {
   display: block; /* 2줄 가로 정렬 명확히 적용 */
 }
+
+.speech-bubble {
+  position: absolute;
+  left: 100%;
+  top: 60%; /* 목 부분 위치로 명확히 조정 */
+  transform: translate(10px, -50%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 16px 20px;
+  border-radius: 15px;
+  font-size: 20px; /* 텍스트 사이즈 명확히 확대 */
+  font-weight: bold;
+  max-width: 260px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  z-index: 2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.speech-bubble span {
+  display: block;
+}
