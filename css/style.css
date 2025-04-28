@@ -73,14 +73,37 @@ header {
   border-radius: 12px; font-size: 16px; color: #fff; max-width: 200px;
 }
 
+body, html { color: #fff; }
+
+/* Neon text 효과 적용 */
+h1, p, .nav-bar ul li a, .speech-bubble {
+  text-shadow:
+    0 0 5px #00ffc3,
+    0 0 10px #00ffc3,
+    0 0 20px #00ffc3,
+    0 0 40px #00ffc3;
+}
+
+/* 말풍선 꼬리 명확히 추가 */
 .speech-bubble {
   position: absolute; left: 100%; top: 30%;
   transform: translateX(10px);
-  background-color: rgba(255, 255, 255, 0.9); /* 배경 명확히 강조 */
-  color: #000; /* 텍스트 색상 대비 강화 */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #00ffc3;
   padding: 12px 16px;
   border-radius: 12px; font-size: 16px; font-weight: bold;
   max-width: 220px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* 명확한 그림자 추가 */
-  z-index: 2; /* 말풍선 명확히 앞에 보이도록 */
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.7);
+  z-index: 2;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent rgba(255,255,255,0.1) transparent transparent;
 }
