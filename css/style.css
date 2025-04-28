@@ -262,47 +262,40 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .features-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; /* 1번 간격 명확히 좁힘 */
-  padding: 30px 10px;
-  background-color: transparent;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 30px 10px !important;
+  background-color: transparent !important;
 }
 
 .feature-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  background-color: transparent;
-  box-shadow: none;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 1 !important;
+  text-align: center !important;
+  color: #fff !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .feature-card img {
-  width: 100%;
-  height: auto;
-  max-width: 280px;
-  margin-bottom: 3px; /* 2번 간격 명확히 좁힘 */
+  width: 100% !important;
+  height: auto !important;
+  max-width: 280px !important;
+  margin-bottom: 3px !important;
 }
 
 .feature-card h3 {
-  font-size: 24px;
-  margin-bottom: 2px;
+  font-size: 24px !important;
+  margin-bottom: 2px !important;
 }
 
 .feature-card p {
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-/* 모든 이미지와 텍스트의 센터 명확히 맞춤 */
-.feature-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 18px !important;
+  line-height: 1.2 !important;
 }
