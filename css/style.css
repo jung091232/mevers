@@ -157,18 +157,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   text-align: center;
 }
 
-.hero-image::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background-image: url('../images/chart_background.png'); /* 명확한 경로 수정 */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.5;
-  z-index: -1;
+.hero-image img {
+  width: auto;
+  height: 400px; /* 캐릭터 정사이즈 설정 */
+  object-fit: contain;
 }
+
+/* 기존 차트 배경 CSS 제거 */
