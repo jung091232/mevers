@@ -201,3 +201,29 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   height: 1000px; /* 캐릭터 사이즈 극대화 */
   max-width: none !important; /* 이미지 최대 너비 제한 제거 */
 }
+
+.hero-section {
+  gap: 20px; /* 캐릭터와 텍스트 사이 간격 명확히 좁힘 */
+}
+
+.speech-bubble {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(10px, -50%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 220px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  z-index: 2;
+  text-align: center;
+  white-space: nowrap; /* 텍스트 2줄로 명확히 정렬 방지 */
+}
+
+.speech-bubble span {
+  display: block; /* 2줄 가로 정렬 명확히 적용 */
+}
