@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meverse | 관리자 대시보드</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <section class="section">
+    <h2 class="claim-title">🛠️ 관리자 대시보드</h2>
+    <p class="claim-subtitle">지갑 주소로 유저를 검색하고 추천 보상을 관리하세요</p>
+    <div class="admin-card">
+      <input type="text" id="admin-address" class="admin-input" placeholder="지갑 주소를 입력하세요" />
+      <button onclick="searchUser()" class="cta-button">조회하기</button>
+    </div>
+
+    <div id="admin-result" class="admin-result" style="margin-top: 30px;">
+      <h3>🔎 유저 정보</h3>
+      <p>총 구매 금액: <span id="admin-purchase">$0</span></p>
+      <p>추천 수: <span id="admin-ref-count">0명</span></p>
+      <p>추천 총 금액: <span id="admin-ref-amount">$0</span></p>
+      <p>예상 보상 금액: <span id="admin-reward">$0</span></p>
+      <p>지급 여부: <span id="admin-paid">❌</span></p>
+      <h4>📆 일자별 구매 내역</h4>
+      <div id="admin-history">
+        <ul>
+          <li>2024-05-01 - $100</li>
+          <li>2024-05-05 - $200</li>
+        </ul>
+      </div>
+      <button class="cta-button">보상 지급</button>
+    </div>
+
+    <h3 style="color:#00ffc3; margin-top:40px;">📋 전체 유저 보상 상태</h3>
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>지갑 주소</th>
+          <th>총 구매</th>
+          <th>추천 수</th>
+          <th>추천 총액</th>
+          <th>보상 금액</th>
+          <th>지급 여부</th>
+          <th>관리</th>
+        </tr>
+      </thead>
+      <tbody id="user-table-body">
+        <tr>
+          <td>0x123...A9F1</td>
+          <td>$500</td>
+          <td>12명</td>
+          <td>$3,200</td>
+          <td>$90</td>
+          <td>❌</td>
+          <td><button class="cta-button">지급</button> <button class="cta-button">완료 처리</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="admin-tools" style="margin-top: 30px; text-align:center;">
+      <button class="cta-button">📥 .csv 다운로드</button>
+      <button class="cta-button">🏆 추천 랭킹 보기</button>
+      <button class="cta-button">🔄 데이터 초기화</button>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded');
+    });
+  </script>
+</body>
+</html>

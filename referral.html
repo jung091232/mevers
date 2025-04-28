@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meverse | Referral</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <section class="presale-hero">
+
+
+<div class="reward-info">
+  <h3>📌 Referral Reward Policy</h3>
+  <ul>
+    <li>✅ You must purchase at least <strong>$300</strong></li>
+    <li>✅ At least <strong>10 referrals</strong> to start earning rewards</li>
+    <li>💸 Max reward: Up to your purchase amount (up to <strong>$2,000</strong>)</li>
+    <li>💰 Your purchased MVS tokens are fully guaranteed regardless of rewards.</li>
+  </ul>
+  <br/>
+  <h4>📈 Reward Rate by Number of Referrals</h4>
+  <table class="reward-table">
+    <thead>
+      <tr><th>Level</th><th>Referral Count</th><th>Reward Rate</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Level 1</td><td>10 people</td><td>Payback up to your purchase amount</td></tr>
+      <tr><td>Level 2</td><td>11–20 people</td><td>5%</td></tr>
+      <tr><td>Level 3</td><td>21–30 people</td><td>6%</td></tr>
+      <tr><td>Level 4</td><td>31–40 people</td><td>7%</td></tr>
+      <tr><td>Level 5</td><td>41–50 people</td><td>8%</td></tr>
+      <tr><td>Level 6</td><td>51–60 people</td><td>9%</td></tr>
+      <tr><td>Level 7</td><td>61–100 people</td><td>10%</td></tr>
+      <tr><td>Level 8</td><td>100+ people</td><td>15%</td></tr>
+    </tbody>
+  </table>
+  <br/>
+  <h4>💡 Example</h4>
+  <p>If you purchase <strong>$500</strong> and refer <strong>25 people</strong>, you receive:</p>
+  <ul>
+    <li>✅ Payback up to $500 (because you reached 10+ referrals)</li>
+    <li>💸 Referral-based reward:</li>
+    <ul>
+      <li>10 referrals from Level 2 → 5% of referred purchase amount = <strong>$25</strong></li>
+      <li>5 referrals from Level 3 → 6% of referred purchase amount = <strong>$30</strong></li>
+    </ul>
+    <li>🔎 Total reward = <strong>$55</strong></li>
+  </ul>
+</div>
+
+
+    <h1>🧬 Referral Tower</h1>
+    <p>Invite your friends and climb the Meme Tower!</p>
+    <div class="presale-card" style="max-width: 1000px;">
+      <button onclick="connectWallet()" class="cta-button">🔌 Connect Wallet</button>
+      <p id="wallet-address" class="wallet-box">Wallet: Not Connected</p>
+<div class="referral-summary">
+<p>💰 My Purchase: <span id="my-purchase">$0</span></p>
+<p>📈 Total Referral Purchase: <span id="total-ref">$0</span></p>
+<p>🎁 My Reward: <span id="my-reward">$0</span></p>
+</div>
+      <p class="wallet-box">Referral Link:</p>
+      <input type="text" id="ref-link" readonly value="https://meverse.one/?ref=0x0000" />
+      <button onclick="copyLink()" class="cta-button">🔗 Copy Link</button>
+      <div id="qrcode" class="qrcode-box"></div>
+      <div class="ref-info">
+        <p>🔢 Referred: <span id="ref-count">0</span> people</p>
+        <p>💰 Estimated Reward: <span id="ref-reward">0</span> MVS</p>
+      </div>
+      <div class="tower">
+        <p class="tower-title">Referral Tower</p>
+        <div id="ref-list" class="tower-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded');
+    });
+  </script>
+  <script src="referral.js"></script>
+</body>
+</html>
