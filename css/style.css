@@ -107,3 +107,36 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   border-style: solid;
   border-color: transparent rgba(255,255,255,0.1) transparent transparent;
 }
+
+.speech-bubble {
+  position: absolute; left: 100%; top: 30%;
+  transform: translateX(10px);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 220px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  z-index: 2;
+  text-align: center;
+}
+
+/* 말풍선 꼬리 확실히 강조 */
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+/* 텍스트 2줄 가로 정렬 명확히 적용 */
+.speech-bubble span {
+  display: inline-block;
+  width: 100%;
+}
