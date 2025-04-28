@@ -260,3 +260,39 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .speech-bubble span {
   display: block;
 }
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.feature-card {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.7);
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
