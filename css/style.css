@@ -264,9 +264,9 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .feature-section-new {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; /* 하단 텍스트 일자 정렬을 위해 하단 정렬 */
   gap: 30px;
-  padding: 50px 10px;
+  padding: 60px 10px;
   background: transparent;
 }
 
@@ -278,7 +278,8 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .feature-card-new img {
-  max-width: 200px;
+  width: 300px;
+  height: 300px; /* 이미지 크기 명확히 고정 */
   margin-bottom: 10px;
 }
 
@@ -289,38 +290,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .feature-card-new p {
-  font-size: 16px;
-  color: #fff;
-}
-
-.feature-section-new {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; /* 카드 간격 증가 */
-  padding: 60px 10px; /* 섹션 패딩 증가 */
-  background: transparent;
-}
-
-.feature-card-new {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.feature-card-new img {
-  max-width: 260px; /* 이미지 크기 증가 */
-  margin-bottom: 15px; /* 이미지와 텍스트 간격 조금 더 띄움 */
-}
-
-.feature-card-new h3 {
-  font-size: 28px; /* 타이틀 텍스트 크기 증가 */
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.feature-card-new p {
-  font-size: 20px; /* 설명 텍스트 크기 증가 */
+  font-size: 18px;
   color: #fff;
 }
