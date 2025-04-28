@@ -167,6 +167,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .hero-image img {
   width: auto;
-  height: 550px; /* 캐릭터 사이즈 더 크게 확대 */
+  height: 800px; /* 캐릭터 크기 2배로 명확히 확대 */
   object-fit: contain;
 }
