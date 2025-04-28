@@ -164,3 +164,9 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 /* 기존 차트 배경 CSS 제거 */
+
+.hero-image img {
+  width: auto;
+  height: 550px; /* 캐릭터 사이즈 더 크게 확대 */
+  object-fit: contain;
+}
