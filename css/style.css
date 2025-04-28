@@ -264,42 +264,45 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .features-section {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  gap: 30px;
-  padding: 40px 20px;
+  align-items: center;
+  gap: 10px; /* 1번 간격 명확히 좁힘 */
+  padding: 30px 10px;
   background-color: transparent;
 }
 
 .feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   text-align: center;
   color: #fff;
   padding: 0;
-  background-color: transparent; /* 박스 배경 명확히 제거 */
-  box-shadow: none; /* 박스 그림자 제거 */
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .feature-card img {
   width: 100%;
   height: auto;
-  max-width: 280px; /* 이미지 크기 명확히 확대 */
-  margin-bottom: 5px; /* 이미지와 텍스트 간격 좁힘 */
+  max-width: 280px;
+  margin-bottom: 3px; /* 2번 간격 명확히 좁힘 */
 }
 
 .feature-card h3 {
-  font-size: 24px; /* 텍스트 크기 명확히 확대 */
-  margin-bottom: 3px;
+  font-size: 24px;
+  margin-bottom: 2px;
 }
 
 .feature-card p {
-  font-size: 18px; /* 설명 텍스트 크기 확대 */
-  line-height: 1.3;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
-/* 모든 카드 센터 정렬 명확히 적용 */
-.features-section .feature-card {
+/* 모든 이미지와 텍스트의 센터 명확히 맞춤 */
+.feature-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
