@@ -1037,40 +1037,43 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* Updated Hero Section with Text Overlay and Smaller Image */
+/* Hero section with text left, image right (gap 0, image 80%) */
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 60px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
 }
 
 .hero-image {
-    position: relative;
-    width: 80%;
-    max-width: 500px;
+    flex: 1 1 50%;
+    text-align: right;
 }
 
 .hero-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    display: block;
-}
-
-.hero-text-overlay {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
-    width: 100%;
-    padding: 0 10px;
 }
