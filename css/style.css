@@ -316,6 +316,78 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
+
+
+/* Tokenomics Section (리뉴얼) */
+.tokenomics-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.tokenomics-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.tokenomics-text {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 2px solid #00ffc3;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.4);
+}
+
+.tokenomics-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffc3;
+  text-align: center;
+  text-shadow: 0 0 10px #00ffc3;
+}
+
+.tokenomics-text table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tokenomics-text th, .tokenomics-text td {
+  border: 1px solid rgba(0, 255, 195, 0.6);
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tokenomics-text th {
+  background-color: rgba(0, 255, 195, 0.1);
+}
+
+.tokenomics-text td {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.tokenomics-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokenomics-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
 /* About Meverse Section */
 .about-meverse-section {
   display: flex;
