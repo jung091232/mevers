@@ -1169,3 +1169,46 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     height: auto;
     display: inline-block;
 }
+
+
+/* Completely Rebuilt Hero Section - Centered Layout */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
