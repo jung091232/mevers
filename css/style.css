@@ -1133,3 +1133,14 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Uniform padding for all major sections */
+.hero-section,
+.flow-full-section,
+.about-meverse-section,
+.tokenomics-section,
+.roadmap-section,
+.faq-section {
+    padding: 60px 0;
+}
