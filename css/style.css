@@ -486,9 +486,9 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 /* Tokenomics 캐릭터 말풍선 */
 .speech-bubble-tokenomics {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -120%);
+  transform: translate(30px, -50%);
   background-color: #ffffff;
   color: #000000;
   padding: 12px 16px;
@@ -555,10 +555,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .speech-bubble-roadmap {
+  top: 40%;
+  left: 60%;
+  transform: translate(-30px, -50%);
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -120%);
+  transform: translate(30px, -50%);
   background-color: #ffffff;
   color: #000000;
   padding: 12px 16px;
