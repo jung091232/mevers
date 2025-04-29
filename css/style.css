@@ -1077,3 +1077,49 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     width: 80%;
     height: auto;
 }
+
+
+/* Adjust hero layout spacing: character image left-shifted, text right-shifted */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 20px;
+    transform: translateX(10%);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1 1 50%;
+    text-align: right;
+    transform: translateX(-5%);
+}
+
+.hero-image img {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+}
