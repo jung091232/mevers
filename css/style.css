@@ -1045,3 +1045,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Slightly reduce hero image size */
+.hero-image img {
+    width: auto;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
