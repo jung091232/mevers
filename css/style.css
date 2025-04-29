@@ -1196,3 +1196,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     margin-bottom: 0;
     padding: 0;
 }
+
+
+/* From About section onward, enforce uniform 80px spacing */
+.about-meverse-section,
+.tokenomics-section,
+.roadmap-section,
+.faq-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
