@@ -1081,3 +1081,34 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     height: auto;
     display: inline-block;
 }
+
+
+/* Final Hero Section Centering Adjustment */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 70%;
+    max-width: 320px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
