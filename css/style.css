@@ -1035,3 +1035,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .exchange-img:hover {
     transform: scale(1.05);
 }
+
+
+/* Fix oversized image by using natural image size */
+.hero-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
