@@ -829,3 +829,36 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   max-width: 350px;
   height: auto;
 }
+
+
+/* Exchange Section */
+.exchange-section {
+  padding: 80px 20px;
+  background: transparent;
+  text-align: center;
+}
+
+.exchange-section h2 {
+  font-size: 36px;
+  color: #00ffc3;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #00ffc3;
+}
+
+.exchange-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exchange-swiper img {
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+  transition: transform 0.3s;
+}
+
+.exchange-swiper img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
