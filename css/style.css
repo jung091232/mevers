@@ -1052,3 +1052,32 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Updated Hero Section Layout: Text + Image Side-by-Side Centered */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 70%;
+    max-width: 320px;
+    height: auto;
+    display: inline-block;
+}
