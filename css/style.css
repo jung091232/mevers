@@ -523,6 +523,78 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
+
+
+/* Tokenomics 캐릭터 말풍선 (정밀조정) */
+.speech-bubble-tokenomics {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  transform: translate(-50%, -100%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 220px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.speech-bubble-tokenomics::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Roadmap 캐릭터 말풍선 (정밀조정) */
+.speech-bubble-roadmap {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -100%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 220px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.speech-bubble-roadmap::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Tokenomics/ Roadmap 이미지 포지션 상대 설정 */
+.tokenomics-image, .roadmap-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
 /* Roadmap Section */
 .roadmap-section {
   padding: 80px 20px;
