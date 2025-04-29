@@ -1055,3 +1055,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Further reduce hero image size to 75% */
+.hero-image img {
+    width: auto;
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
