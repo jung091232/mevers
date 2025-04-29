@@ -1035,3 +1035,20 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .exchange-img:hover {
     transform: scale(1.05);
 }
+
+
+/* Updated Hero Section for Better Centering and Balance */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-image img {
+    width: 70%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
