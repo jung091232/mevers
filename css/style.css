@@ -305,7 +305,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .flow-full-image {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   height: auto;
   animation: fadeIn 2s ease-in;
 }
@@ -313,4 +313,36 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* About Meverse Section */
+.about-meverse-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.about-meverse-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00ffc3;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.4);
+}
+
+.about-meverse-box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffc3;
+  text-shadow: 0 0 10px #00ffc3;
+}
+
+.about-meverse-box p {
+  font-size: 20px;
+  line-height: 1.6;
 }
