@@ -996,3 +996,42 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .exchange-item img:hover {
     transform: scale(1.05);
 }
+
+/* Exchange Section */
+.exchange-section {
+    background-color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.exchange-section .section-title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exchange-img {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #1e1e1e;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.exchange-img:hover {
+    transform: scale(1.05);
+}
