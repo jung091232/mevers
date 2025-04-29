@@ -1175,3 +1175,24 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     padding-top: 40px;
     padding-bottom: 60px;
 }
+
+
+/* Strong removal of unwanted margins and padding between sections and images */
+.hero-section,
+.flow-full-section,
+.about-meverse-section,
+.tokenomics-section,
+.roadmap-section,
+.faq-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.flow-full-section img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
