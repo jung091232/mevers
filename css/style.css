@@ -1144,3 +1144,34 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .faq-section {
     padding: 60px 0;
 }
+
+
+/* Tighten Hero to next section spacing */
+.hero-section {
+    padding-bottom: 40px;
+}
+
+.flow-full-section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.about-meverse-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.tokenomics-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.roadmap-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.faq-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
