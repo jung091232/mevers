@@ -293,3 +293,24 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   font-size: 18px;
   color: #fff;
 }
+
+
+/* Flow Full Section */
+.flow-full-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.flow-full-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
