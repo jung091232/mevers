@@ -1119,3 +1119,17 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block;
     margin: 0 auto;
 }
+
+
+/* Expand Hero Image to 40% */
+.hero-image {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
