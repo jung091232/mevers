@@ -1037,78 +1037,40 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* Updated Hero Section for Better Centering and Balance */
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+/* Updated Hero Section with Text Overlay and Smaller Image */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+}
+
+.hero-image {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
 }
 
 .hero-image img {
-    width: 70%;
-    max-width: 320px;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
-
-/* Updated Hero Section Layout: Text + Image Side-by-Side Centered */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-}
-
-.hero-content {
-    flex: 1 1 400px;
-    max-width: 500px;
-    text-align: left;
-    padding: 20px;
-}
-
-.hero-image {
-    flex: 1 1 300px;
-    text-align: center;
-}
-
-.hero-image img {
-    width: 70%;
-    max-width: 320px;
-    height: auto;
-    display: inline-block;
-}
-
-
-/* Final Hero Section Centering Adjustment */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero-content {
-    flex: 1 1 400px;
-    max-width: 500px;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-image {
-    flex: 1 1 300px;
-    text-align: center;
-}
-
-.hero-image img {
-    width: 70%;
-    max-width: 320px;
-    height: auto;
-    display: inline-block;
-    margin: 0 auto;
+.hero-text-overlay {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 0 10px;
 }
