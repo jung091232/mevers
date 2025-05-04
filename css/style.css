@@ -1663,3 +1663,60 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     text-align: center;
   }
 }
+
+
+/* --- FINAL v3 JOIN SECTION POLISH --- */
+.join-presale-text h2 {
+  font-size: 2.4em;
+  margin-bottom: 40px; /* more space above button */
+}
+.join-button {
+  background-color: #00ffcc;
+  color: black;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 40px; /* more space from title */
+}
+.join-presale-character {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.join-presale-character img {
+  width: 440px;
+  height: auto;
+  max-width: 100%;
+}
+.speech-bubble {
+  background-color: #00ffcc;
+  color: black;
+  padding: 22px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.05em;
+  line-height: 1.6em;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+  max-width: 380px;
+  text-align: left;
+  word-wrap: break-word;
+}
+.tokenomics-section {
+  margin-top: 0px; /* bring it closer to join section */
+}
+
+@media (max-width: 768px) {
+  .join-presale-character {
+    flex-direction: column;
+  }
+  .speech-bubble {
+    max-width: 90%;
+    text-align: center;
+  }
+}
