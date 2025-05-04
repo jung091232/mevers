@@ -1306,3 +1306,30 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     margin-top: 20px;
   }
 }
+
+
+/* Update for Join Presale bubble alignment fix */
+.join-presale-character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.join-presale-character .speech-bubble {
+  position: static;
+  background-color: #00ffcc;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  max-width: 260px;
+  font-size: 1em;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+@media (max-width: 768px) {
+  .join-presale-character {
+    flex-direction: column;
+  }
+}
