@@ -1427,3 +1427,41 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .join-presale-text {
   margin-bottom: 20px;
 }
+
+
+/* Speech bubble to the right of character */
+.join-presale-character {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.join-presale-character img {
+  width: 260px;
+  height: auto;
+  max-width: 100%;
+}
+.speech-bubble {
+  background-color: #00ffcc;
+  color: black;
+  padding: 18px 22px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.6em;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+  max-width: 320px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .join-presale-character {
+    flex-direction: column;
+  }
+  .speech-bubble {
+    max-width: 90%;
+    text-align: center;
+  }
+}
