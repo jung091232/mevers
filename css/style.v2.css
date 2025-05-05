@@ -1741,3 +1741,24 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   text-align: left;
   word-wrap: break-word;
 }
+
+
+/* === OVERRIDE FIXES v2 === */
+.join-presale-character img {
+  width: 480px !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+.speech-bubble {
+  background-color: #00ffcc !important;
+  color: black !important;
+  padding: 24px 30px !important;
+  border-radius: 20px !important;
+  font-weight: bold !important;
+  font-size: 1.1em !important;
+  line-height: 1.6em !important;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.3) !important;
+  max-width: 400px !important;
+  text-align: left !important;
+  word-wrap: break-word !important;
+}
