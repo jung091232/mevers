@@ -1877,3 +1877,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .join-presale-btn:hover {
     background-color: #00e0c0 !important;
 }
+
+
+/* Enlarge Presale Section MEMON Character */
+.memon-character {
+    width: 360px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
