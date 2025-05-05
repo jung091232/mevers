@@ -1917,3 +1917,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     margin: 20px auto 0;
     display: inline-block;
 }
+
+
+/* Force character size with combined selector */
+.join-presale-character img.memon-character {
+    width: 440px !important;
+    height: auto !important;
+    max-width: none !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
