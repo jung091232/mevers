@@ -1814,3 +1814,29 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .join-presale-btn:hover {
     background-color: #00e0c0;
 }
+
+
+/* Force layout adjustments */
+.hero-image {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    text-align: center !important;
+}
+
+.memon-character {
+    width: 300px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Speech bubble final fix */
+.speech-bubble {
+    padding: 14px 24px !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    max-width: 360px !important;
+    display: inline-block !important;
+    margin: 20px auto 0 !important;
+}
