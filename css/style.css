@@ -1897,3 +1897,61 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block !important;
     margin: 0 auto !important;
 }
+
+
+/* Join Presale Clean Section */
+.join-presale-section {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.join-presale-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-presale-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.join-presale-btn {
+    font-size: 1.2rem;
+    padding: 14px 28px;
+    background-color: #00ffd5;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.join-presale-btn:hover {
+    background-color: #00e0c0;
+}
+
+.join-presale-character img {
+    width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.speech-bubble {
+    padding: 14px 24px;
+    background-color: #00ffd5;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 20px;
+    max-width: 360px;
+    margin: 20px auto 0;
+    display: inline-block;
+}
