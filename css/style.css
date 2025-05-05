@@ -1206,24 +1206,3 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-
-
-/* Presale Button Glow */
-@keyframes pulse {
-  0% { box-shadow: 0 0 0px #ffcc00; }
-  50% { box-shadow: 0 0 20px #ffcc00; }
-  100% { box-shadow: 0 0 0px #ffcc00; }
-}
-
-/* Floating Memon Animation */
-@keyframes floatY {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Speech bubble fade-in */
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
