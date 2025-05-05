@@ -1779,3 +1779,38 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 .join-presale-btn:hover {
     background-color: #00e0c0;
 }
+
+
+/* Character image - enlarged */
+.memon-character {
+    width: 300px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Speech bubble fix */
+.speech-bubble {
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    max-width: 360px;
+    display: inline-block;
+    margin: 20px auto 0 !important;
+}
+
+/* Enlarged CTA button */
+.join-presale-btn {
+    font-size: 1.25rem !important;
+    padding: 14px 30px !important;
+    border-radius: 40px !important;
+    background-color: #00ffd5;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-presale-btn:hover {
+    background-color: #00e0c0;
+}
