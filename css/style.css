@@ -1887,3 +1887,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block !important;
     margin: 0 auto !important;
 }
+
+
+/* Reapply .memon-character style definitively */
+.memon-character {
+    width: 360px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
