@@ -1720,3 +1720,24 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     text-align: center;
   }
 }
+
+
+/* v5 Character Size Boost and Speech Bubble Realignment */
+.join-presale-character img {
+  width: 480px;
+  height: auto;
+  max-width: 100%;
+}
+.speech-bubble {
+  background-color: #00ffcc;
+  color: black;
+  padding: 24px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+  max-width: 400px;
+  text-align: left;
+  word-wrap: break-word;
+}
