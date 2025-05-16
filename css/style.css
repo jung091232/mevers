@@ -2071,3 +2071,23 @@ nav .nav-menu {
   color: #f0f0f0;
   background-color: #1a1a1a;
 }
+
+.about-bg-block {
+  background-color: #111;
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #f0f0f0;
+}
+.about-meverse-section h2 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-meverse-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
