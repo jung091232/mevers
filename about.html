@@ -32,7 +32,7 @@
 <!-- Desktop Navigation -->
 <!-- Mobile Navigation -->
 <!-- Navigation (clone of index.html style) -->
-<header>
+<header><select id="language-select"><option value="en">EN</option><option value="kr">KR</option></select>
 <div class="desktop-only">
 </div>
 </header>
@@ -337,5 +337,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const lang = localStorage.getItem("lang") || "en";
   applyTranslation(lang);
 </script>
-</body>
+<script src="js/lang.js"></script></body>
 </html>
