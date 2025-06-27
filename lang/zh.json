@@ -66,7 +66,7 @@
   "about.eco.title": "🌐 Meverse生态系统",
   "about.radar.dex": "DEX数据整合",
   "about.wallet.more_cta": "了解更多功能",
-  "about.trading.token_desc": "MVS代币可用于整个生态系统的服务、奖励和质押。",
+  "about.trading.token_desc": "使用MVS支付执行费用，启动自动化交易策略。",
   "about.trading.token": "代币用途",
   "about.nft.quest_desc": "通过每日任务获取奖励和NFT。",
   "about.cta.btn1": "查看白皮书",
@@ -125,7 +125,7 @@
   "about.wallet.security_desc": "采用军用级加密技术与国际安全标准保障资产安全。",
   "about.wallet.more_title": "Meverse钱包不仅仅是钱包。",
   "about.wallet.more_desc": "探索Meverse提供的更多工具与实用功能。",
-  "about.trading.title": "🤖 AI自动交易",
+  "about.trading.title": "🤖 AI 自动交易",
   "about.trading.demo": "模拟交易环境",
   "about.trading.demo_desc": "零风险测试交易策略，提升实战能力。",
   "about.trading.mining": "Meme挖矿",
@@ -133,5 +133,10 @@
   "about.trading.data": "AI智能数据",
   "about.trading.data_desc": "利用AI实时分析，做出更明智的投资决策。",
   "about.hero.subtitle": "集成AI、NFT与Meme的新一代钱包",
-  "about.hero.title": "发现 Meverse 生态系统"
+  "about.hero.title": "发现 Meverse 生态系统",
+  "about.eco.core": "🔗 MVS 是核心",
+  "about.eco.core_desc": "Meverse 的每一个产品与功能都由 $MVS 提供支持。",
+  "about.eco.reward_desc": "用户在生态中互动时会获得 $MVS 奖励。",
+  "about.eco.structure_desc": "Meverse 不只是工具，更是为 Meme 驱动的 Web3 未来打造的可扩展框架。",
+  "about.hero.cta": "购买 MVS 代币"
 }
