@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mevers - Staking</title>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/load-components.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<div data-include="header.html"></div>
+<div data-include="nav.html"></div>
+<div id="particles-js"></div>
+<script>
+    particlesJS.load('particles-js', 'config/particles.json');
+  </script>
+<div id="navbar-placeholder"></div>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>
+   Staking
+  </title>
+<link href="./css/style.css" rel="stylesheet"/>
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+</head>
+<body style="padding-top: 60px;"><div id="navbar"></div>
+<div id="navbar"></div>
+<!-- Desktop Navigation -->
+<!-- Mobile Navigation -->
+<header style="width: 100%; background: rgba(0,0,0,0.9); position: fixed; top: 0; z-index: 999;">
+<div class="desktop-only">
+</div>
+<!-- Desktop Nav -->
+<div class="desktop-only">
+<div class="desktop-only">
+</div>
+</div>
+<!-- Mobile Swipe Nav -->
+<div class="mobile-only">
+<div class="mobile-only">
+</div>
+</div>
+</header>
+<section class="staking-hero" style="padding: 100px 20px 60px; display: flex; justify-content: center;">
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-width: 1200px; width: 100%; flex-wrap: wrap;">
+<div class="hero-image" style="flex: 0 0 45%; text-align: center;">
+<img alt="Memon Staking" src="images/memon_stake.webp" style="width: 100%; max-width: 420px;"/>
+</div>
+<div class="hero-text" style="flex: 0 0 45%; text-align: center;">
+<h1 style="font-size: 64px; color: #00ffee; text-shadow: 0 0 12px #00ffee; margin: 0;">
+      Stake Your MVS
+     </h1>
+<p style="font-size: 26px; color: #ffffff; margin: 20px 0;">
+      Earn passive income with every token you stake.
+     </p>
+<button style="padding: 18px 40px; background: none; border: 2px solid #00ffee; color: #00ffee; font-size: 20px; border-radius: 12px; cursor: pointer; transition: all 0.3s;">
+      Connect Wallet
+     </button>
+</div>
+</div>
+</section>
+<section class="staking-interface" style="padding: 60px 20px; display: flex; justify-content: center;">
+<div style="background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(14px); border-radius: 24px; padding: 60px; max-width: 880px; width: 100%; box-shadow: 0 0 25px #00ffee;">
+<h2 style="color: #00ffee; text-align: center; font-size: 36px; margin-bottom: 40px;">
+     Stake Your MVS Tokens
+    </h2>
+<p style="text-align: center; font-size: 16px; color: #ffcc00; margin-bottom: 30px;">
+     🚀 Special bonus rewards for all stakes made within the first 60 days of launch!
+    </p>
+<div style="text-align: center; margin-bottom: 30px;">
+<button onclick="selectDuration(30)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      30 Days
+     </button>
+<button onclick="selectDuration(90)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      90 Days
+     </button>
+<button onclick="selectDuration(180)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      180 Days
+     </button>
+</div>
+<div style="margin-bottom: 30px; text-align: center;">
+<input id="stakeAmount" oninput="updateRewards()" placeholder="Enter amount to stake" style="width: 80%; padding: 14px; border-radius: 10px; border: none; font-size: 20px;" type="number"/>
+</div>
+<div style="margin-bottom: 30px; color: #ffffff; text-align: center; font-size: 18px;">
+     Estimated Rewards:
+     <span id="estimatedRewards" style="color: #00ffee;">
+      0 MVS
+     </span>
+<br/>
+     Remaining Time:
+     <span id="remainingTime" style="color: #00ffee;">
+      -
+     </span>
+<br/>
+<span id="rewardNotice" style="color: #ff5555;">
+</span>
+</div>
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 12px;">
+<button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Stake
+     </button>
+<button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Unstake
+     </button>
+<button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Claim Rewards
+     </button>
+</div>
+<p style="color: #999; text-align: center; margin-top: 30px; font-size: 14px;">
+     * Rewards will be distributed after TGE. No actual tokens are transferred now.
+    </p>
+</div>
+</section>
+<section class="top-stakers" style="padding: 60px 20px; display: flex; flex-direction: column; align-items: center;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 40px; margin-bottom: 40px;">
+<img alt="Top Stakers Memon" src="images/memon_ranking.webp" style="width: 240px;"/>
+<div style="font-size: 52px; color: #00ffee; text-shadow: 0 0 12px #00ffee; font-weight: bold;">
+     Top Stakers!
+    </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 40px;">
+<div style="background: rgba(0,0,0,0.5); border-radius: 16px; padding: 20px 40px; color: white; text-align: center; box-shadow: 0 0 10px #00ffee;">
+<div style="font-size: 18px; color: #ccc;">
+      Total Staked
+     </div>
+<div style="font-size: 28px; color: #00ffee;">
+      425,000,000 MVS
+     </div>
+</div>
+<div style="background: rgba(0,0,0,0.5); border-radius: 16px; padding: 20px 40px; color: white; text-align: center; box-shadow: 0 0 10px #00ffee;">
+<div style="font-size: 18px; color: #ccc;">
+      Remaining Rewards
+     </div>
+<div style="font-size: 28px; color: #00ffee;">
+      1,270,000,000 MVS
+     </div>
+</div>
+</div>
+<div style="width: 100%; max-width: 900px; background: rgba(0,0,0,0.4); border-radius: 20px; padding: 30px; box-shadow: 0 0 10px #00ffee;">
+<h3 style="text-align: center; color: #00ffee; font-size: 24px; margin-bottom: 20px;">
+     Top 50 Stakers
+    </h3>
+<table style="width: 100%; border-collapse: collapse; color: white;">
+<thead>
+<tr style="border-bottom: 1px solid #444;">
+<th style="padding: 10px;">
+        Rank
+       </th>
+<th style="padding: 10px;">
+        Address
+       </th>
+<th style="padding: 10px;">
+        Staked
+       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 10px;">
+        1
+       </td>
+<td style="padding: 10px;">
+        0x12...7dD9
+       </td>
+<td style="padding: 10px;">
+        23,000 MVS
+       </td>
+</tr>
+<tr>
+<td style="padding: 10px;">
+        2
+       </td>
+<td style="padding: 10px;">
+        0x87...5bF2
+       </td>
+<td style="padding: 10px;">
+        21,000 MVS
+       </td>
+</tr>
+<tr>
+<td style="padding: 10px;">
+        3
+       </td>
+<td style="padding: 10px;">
+        0xa3...1C22
+       </td>
+<td style="padding: 10px;">
+        19,000 MVS
+       </td>
+</tr>
+<tr>
+<td style="padding: 10px;">
+        4
+       </td>
+<td style="padding: 10px;">
+        0x0f...A82D
+       </td>
+<td style="padding: 10px;">
+        17,500 MVS
+       </td>
+</tr>
+<tr>
+<td style="padding: 10px;">
+        5
+       </td>
+<td style="padding: 10px;">
+        0x6c...Ef9C
+       </td>
+<td style="padding: 10px;">
+        16,200 MVS
+       </td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 30px; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 12px; text-align: center;">
+<p style="color: #00ffee; font-size: 20px;">
+      You are #17
+     </p>
+<p style="color: #fff;">
+      12,000 MVS staked for 180 days
+     </p>
+<p style="color: #aaa;">
+      Remaining: 28 days
+     </p>
+</div>
+</div>
+</section>
+<style>
+   @keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+  </style>
+<section class="staking-faq" style="padding: 60px 20px; max-width: 900px; margin: 0 auto;">
+<h2 style="color: #00ffee; font-size: 36px; text-align: center; margin-bottom: 40px;">
+    Frequently Asked Questions
+   </h2>
+<div style="background: rgba(0,0,0,0.45); padding: 30px; border-radius: 16px; box-shadow: 0 0 10px #00ffee; color: white; font-size: 18px;">
+<p>
+<strong>
+      Q:
+     </strong>
+     When do I receive my rewards?
+     <br/>
+<strong>
+      A:
+     </strong>
+     All rewards are distributed after the Token Generation Event (TGE).
+    </p>
+<p>
+<strong>
+      Q:
+     </strong>
+     Can I unstake before the period ends?
+     <br/>
+<strong>
+      A:
+     </strong>
+     No, unstaking is only allowed after your selected duration ends.
+    </p>
+<p>
+<strong>
+      Q:
+     </strong>
+     Are my rewards automatically sent?
+     <br/>
+<strong>
+      A:
+     </strong>
+     No, you must manually claim them after your staking period ends.
+    </p>
+<p>
+<strong>
+      Q:
+     </strong>
+     What are the benefits of longer staking?
+     <br/>
+<strong>
+      A:
+     </strong>
+     Longer staking periods offer higher APR and greater rewards.
+    </p>
+</div>
+</section>
+<section class="staking-cta" style="padding: 60px 20px; text-align: center;">
+<div style="max-width: 1000px; margin: 0 auto; background: rgba(0,0,0,0.4); display: inline-block; padding: 60px 50px; border-radius: 24px; box-shadow: 0 0 18px #00ffee;">
+<h2 style="color: #00ffee; font-size: 40px; margin-bottom: 24px;">
+     Ready to go further?
+    </h2>
+<p style="color: #fff; font-size: 20px; margin-bottom: 36px;">
+     Don't miss the chance to join the Meverse revolution. Participate in our presale today.
+    </p>
+<a href="presale.html" style="padding: 18px 40px; font-size: 20px; background: none; border: 2px solid #00ffee; border-radius: 14px; color: #00ffee; text-decoration: none; transition: 0.3s; animation: blink 1.5s infinite;">
+     Join Presale
+    </a>
+</div>
+</section>
+<script>
+fetch('nav.html')
+  .then(res => res.text())
+  .then(data => { document.getElementById('navbar').innerHTML = data });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const menu = document.querySelector('.mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  }
+});
+</script>
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  particlesJS.load('particles-js', '/config/particles.json', function () {
+    console.log('particles.js loaded');
+  });
+
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const menu = document.querySelector('.mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  }
+});
+</script>
+<div id="footer-placeholder"></div>
+<div id="language-placeholder"></div>
+<div id="footer-placeholder"></div>
+</body>
+</html>
+<div id="footer-placeholder"></div>
+<div id="language-placeholder"></div>
+<div id="footer-placeholder"></div>
+<div data-include="footer.html"></div>
+<div data-include="language.html"></div></body>
+</html>
